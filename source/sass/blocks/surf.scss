@@ -1,0 +1,522 @@
+.surf {
+  position: relative;
+
+  &__subtitle{
+    position: relative;
+    margin-top: 30px;
+    @media screen and (min-width: $screen-xl) {
+      margin-top: -130px;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: -70%;
+      right: -9%;
+      background: url('/img/surf/surf-icon-map.svg') no-repeat center;
+      min-width: 50px;
+      min-height: 77px;  
+      background-size: cover;
+
+      @media screen and (min-width: $screen-md) {
+        min-width: 300px;
+        min-height: 350px;
+      }
+    }
+  }
+
+  &__slider{
+    position: relative;
+    max-height: 640px;
+    @media screen and (min-width: $screen-md) {
+      max-height: 750px;
+    }
+
+    .slick-current {
+
+      .surf-slider__btn-box{
+        opacity: 1;
+      }
+
+      .surf-slider__inner{
+        background: rgba(#1C2121, 0.3);
+      }
+
+    }
+
+    .slick-slide {
+      min-width: 280px;
+      z-index: 10;
+      transform: perspective(10px);
+
+      &:nth-child(4n + 1){
+        margin-top: 32px;
+      }
+
+      &:nth-child(n + 2){
+        margin-left: -32px;
+      }
+
+      &:nth-child(4n + 3){
+        margin-top: 89px;
+      }
+    }
+
+    .arrows {
+      top: -90px;
+    }
+
+    &-box{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+// --- карта --- //
+.surf-map{
+  background: url('/img/surf/surf-map.png') no-repeat top;
+  max-width: 320px;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  margin: 150px auto 50px;
+
+  @media screen and (min-width: $screen-sm) {
+    max-width: 450px;
+    margin: 150px auto 100px;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    max-width: 750px;
+    margin: 150px auto;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    max-width: 900px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    max-width: 1200px;
+    margin: 0 auto 150px;
+  }
+
+  .slick-list{
+    min-height: 335px;
+    @media screen and (min-width: $screen-sm) {
+      max-width: 435px;
+    }
+    @media screen and (min-width: $screen-md) {
+      max-width: 535px;
+    }
+    @media screen and (min-width: $screen-lg) {
+      min-height: 635px;
+    }
+    overflow: visible;
+    .slick-track{
+      transform: translate3d(0px, 0px, 0px)!important; // чтобы не прокручивались метки на карте
+    }
+  }
+
+  .slick-current{
+    .surf-map-point__content{
+      display: block;
+    }
+
+    .surf-map-point__circle:before{
+      content: '';
+      position: absolute;
+      border-bottom: 14px solid #56f7d0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      top: -9px;
+      left: 1px;
+      @media screen and (min-width: $screen-md) {
+        border-bottom: 16px solid $main-green;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        top: -11px;
+        left: 2px;
+      }
+    }
+  }
+}
+
+// --- точки на карте --- //
+.surf-map-point{
+  position: absolute;
+  
+  &__circle{
+    position: relative;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background: $main-green;
+    border-radius: 50%;
+    box-shadow: 0px 0px 35px rgba($main-green, 0.83);
+    @media screen and (min-width: $screen-md) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__content{
+    text-transform: uppercase;
+    width: 215px;
+    display: none;
+    padding: 15px 20px;
+    background: rgba(#0F1010, 0.9);
+    border-radius: 6px;
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    right: 0;
+
+    @media screen and (min-width: $screen-md) {
+      width: 283px;
+      padding: 28px 32px;
+    }
+
+    &-row{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-head{
+      margin-bottom: 10px;
+      @media screen and (min-width: $screen-md) {
+        width: 283px;
+        margin-bottom: 30px;
+      }
+    }
+    &-title{
+      font-weight: $bold;
+      font-size: 18px;
+      line-height: 26px;
+      padding-bottom: 8px;
+    }
+    &-subtitle{
+      font-size: 16px;
+      line-height: 19px;
+      padding: 8px 10px 0px 0px;
+      border-top: 1px solid $main-green;
+      display: inline-block;
+    }
+    &-link{
+      cursor: pointer;
+
+      svg{
+        width: 17px;
+        height: 14px;
+        fill: $white-opacity;
+        transition: $transition-elem;
+
+        &:hover{
+          fill: $white;
+        }
+      }
+      
+    }
+
+    &-item{
+      text-align: center;
+
+      svg{
+        fill: $main-green;
+        width: 40px;
+        height: 23px;
+      }
+    }
+    &-number{
+      font-weight: $bold;
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &-name{
+      font-weight: $light;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+  }
+
+  // --- расположение всех точек --- //
+  &-1{
+    top: 74px;
+    left: 17px;
+
+    .surf-map-point__content{
+      transform: translate(79%);
+    }
+    @media screen and (min-width: $screen-sm) {
+      top: 74px;
+      left: 17px;  
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 122px;
+      left: 30px;
+
+      .surf-map-point__content{
+        transform: translateX(59%);
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 144px;
+      left: 30px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 360px;
+      left: 54px;
+      .surf-map-point__content{
+        transform: translateX(32%);
+      }
+    }
+  }
+  &-2{
+    top: 94px;
+    left: 59px;
+
+    .surf-map-point__content{
+      transform: translate(70%);
+    }
+    
+    @media screen and (min-width: $screen-sm) {
+      top: 94px;
+      left: 59px;  
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 245px;
+      left: 164px;
+      .surf-map-point__content{
+        transform: translateX(2%);
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 274px;
+      left: 186px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 270px;
+      left: 132px;   
+    }
+  }
+  &-3{
+    top: 126px;
+    left: 69px;
+    .surf-map-point__content{
+      transform: translate(70%);
+    }
+    @media screen and (min-width: $screen-sm) {
+      top: 173px;
+      left: 101px;  
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 293px;
+      left: 187px;
+      .surf-map-point__content{
+        transform: none;
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 354px;
+      left: 227px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 333px;
+      left: 341px;   
+    }
+  }
+  &-4{
+    top: 121px;
+    left: 143px;
+
+    .surf-map-point__content{
+      transform: translate(42%);
+    }
+    @media screen and (min-width: $screen-sm) {
+      top: 159px;
+      left: 210px;  
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 280px;
+      left: 367px;
+      .surf-map-point__content{
+        transform: none;
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 405px;
+      left: 462px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 489px;
+      left: 411px;   
+    }
+  }
+  &-5{
+    top: 138px;
+    left: 159px;
+    .surf-map-point__content{
+      transform: translate(42%);
+    }
+    @media screen and (min-width: $screen-sm) {
+      top: 203px;
+      left: 229px;  
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 341px;
+      left: 384px;
+      .surf-map-point__content{
+        transform: none;
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 405px;
+      left: 462px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 232px;
+      left: 520px;   
+    }
+  }
+  &-6{
+    top: 98px;
+    right: 89px;
+
+    @media screen and (min-width: $screen-sm) {
+      top: 150px;
+      right: 137px;    
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 280px;
+      right: 228px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 320px;
+      right: 275px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+     top: 496px;
+    right: 159px;    
+    }
+  }
+  &-7{
+    top: 100px;
+    right: 51px;
+    @media screen and (min-width: $screen-sm) {
+      top: 155px;
+      right: 67px;    
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 279px;
+      right: 83px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 330px;
+      right: 98px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 379px;
+      right: -140px;     
+    }
+  }
+  &-8{
+    top: 150px;
+    right: -3px;
+
+    @media screen and (min-width: $screen-sm) {
+      top: 215px;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      top: 362px;
+      right: -23px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      top: 428px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      top: 522px;
+      left: 620px;
+      
+    }
+
+    .surf-map-point__content{
+      transform: translateX(-17%);
+    }
+    
+  }
+}
+
+// --- слайдер --- //
+.surf-slider {
+
+  &__inner{
+    background: rgba(#1C2121, 0.85);
+    min-height: 460px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 72px 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+    @media screen and (min-width: $screen-xl) {
+      min-height: 650px;
+    }
+
+    &:hover{
+      background: rgba(#1C2121, 0.3);
+
+      .surf-slider__btn-box{
+        opacity: 1;
+      }
+    }
+
+    &-title{
+      font-weight: $bold;
+      font-size: 40px;
+      line-height: 36px;
+      text-transform: uppercase;
+      max-width: 120px;
+    }
+    &-location{
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+    }
+
+  }
+
+  &__btn-box{
+    align-self: center;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+}

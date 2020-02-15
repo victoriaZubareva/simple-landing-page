@@ -1,0 +1,140 @@
+// слайдер на секциях -- travel / sleep
+.repeat-slider{
+
+  &__img{
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 571px;
+    @media screen and (min-width: $screen-md) {
+      width: 1100px;
+      height: 771px;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 105%;
+      height: 105%;
+      top: -3%;
+      left: 0;
+      background: rgba(23, 25, 25, 0.3);
+      box-shadow: inset -14px 66px 43px 5px #171919, inset -7px -8px 47px 69px #171919;
+      @media screen and (min-width: $screen-md) {
+        box-shadow: inset -129px 66px 43px 5px #171919, inset -7px -8px 47px 69px #171919;
+      }
+    }
+  }
+
+  &__head{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    @media screen and (min-width: $screen-md) {
+      justify-content: space-between;
+    }
+  }
+
+  &__descr{
+    position: relative;
+    margin-bottom: 40px;
+    @media screen and (min-width: $screen-md) {
+      margin-bottom: 70px;
+    }
+    
+    &-head{
+      position: relative;
+      max-width: 494px;
+      word-wrap: break-word;
+    }
+
+    &-img{
+      max-height: 320px;
+
+      img{
+        display: none;
+        @media screen and (min-width: $screen-md) {
+          display: block;
+          width: 400px;
+          position: absolute;
+          top: 0;
+          right: -135px;
+          transform: translateY(-80%);
+        }
+        @media screen and (min-width: $screen-xl) {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+  &__arrows{
+    top: 110px;
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+
+    &-item{
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center;
+      @media screen and (min-width: $screen-md) {
+        align-items: flex-start;
+      }
+    }
+    &-subtitle{
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      color: $white-opacity;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      text-align: end;
+      white-space: nowrap;
+      
+    }
+    &-title{
+      font-weight: $bold;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 50px 0 15px;
+      min-width: 200px;
+      @media screen and (min-width: $screen-md) {
+        font-size: 40px;
+      }
+    }
+
+    &-span {
+      font-size: 14px;
+      line-height: 36px;
+      letter-spacing: 5.25px;
+      opacity: 0.75;
+      display: block;
+      text-align: right;
+      font-weight: $normal;
+    }
+  }
+
+  &__btn{
+    text-align: center;
+  }
+
+  &__subtitle {
+    z-index: 100;
+
+    .repeat-slider__arrows {
+      top: 135px;
+    }
+  }
+
+}

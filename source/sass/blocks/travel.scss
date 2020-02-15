@@ -1,0 +1,14 @@
+.travel {
+  position: relative;
+  background: #171919;
+
+  &__bg-glass {
+    
+    @media screen and (min-width: $screen-md) {
+      position: absolute;
+      background: url(/img/travel/travel-bg-glass.png) no-repeat bottom right;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

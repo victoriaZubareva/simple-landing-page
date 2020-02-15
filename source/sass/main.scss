@@ -1,0 +1,23 @@
+@import 'normalize';
+// Шрифты
+@import 'fonts';
+
+// Глобальные переменные
+@import 'vars';
+
+// Базовые параметры страницы
+@import 'global';
+
+// Блоки
+@import './blocks/header';
+@import './blocks/surf';
+@import './blocks/repeating-slider-section.scss';
+@import './blocks/travel';
+@import './blocks/sleep';
+@import './blocks/shop.scss';
+@import './blocks/footer.scss';
+
+// Анимации
+@import './allAnimations.scss';
+
+

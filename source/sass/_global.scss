@@ -1,0 +1,334 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: $normal; // 400;
+  line-height: 1.5; // font-size * 1,5 = 22,5px
+  color: $white; // #fff;
+  font-style: normal;
+  overflow-x: hidden;
+  background: $base-background;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container-inner{
+  padding: 10px 20px;
+  @media screen and (min-width: $screen-md) {
+    padding: 0 135px;
+  }
+}
+
+.surf, .travel, .sleep, .shop {
+  margin: 50px 0;
+  @media screen and (min-width: $screen-md) {
+    margin: 70px 0;
+  }
+  @media screen and (min-width: $screen-lg) {
+    margin: 120px 0;
+  }
+}
+
+.slick-slide img {
+  display: initial;
+}
+
+// --- линия перед подзаголовоком --- //
+.headline-left {
+  font-size: 17px;
+  line-height: 15px;
+  color: $white-opacity;
+  text-transform: uppercase;
+  letter-spacing: 3.33px;
+  position: relative;
+  display: inline-block;
+  padding-left: 65px;
+
+  @media screen and (min-width: $screen-md) {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33px;
+    padding-left: 100px;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 1px;
+    background: $white-opacity;
+    left: 0;
+    top: 50%;
+
+    @media screen and (min-width: $screen-md) {
+      width: 80px;
+    }
+  }
+
+  &__right {
+    padding: 0 100px 0 0;
+    &:before{
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+// --- стрелка --- // 
+.slider-arrow {
+  width: 24px;
+  height: 20px;
+  fill: $white-opacity;
+  transition: $transition-elem;
+
+  &-left {
+    transform: rotateY(180deg);
+  }
+
+  &:hover {
+    fill: $white;
+  }
+}
+
+// --- стрелки next prev вместе --- //
+.arrows {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  z-index: 4;
+
+  &__prev{
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    right: 80px;
+    top: 40px;
+  }
+}
+
+// --- двойной заголовок в секциях --- //
+.title {
+  span {
+    font-weight: $bold;
+    font-size: 95px;
+    text-transform: uppercase;
+    color: rgba($white, 0.02);
+    position: relative;
+    display: inline-block;
+    transform: translateX(10px);
+    @media screen and (min-width: $screen-md) {
+      font-size: 140px;
+      transform: translateX(-60px);
+    }
+    @media screen and (min-width: $screen-xl) {
+      font-size: 180px;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: 0px;
+    right: 24px;
+    color: $white;
+    font-size: 60px;
+    line-height: 1.1;
+    @media screen and (min-width: $screen-md) {
+      font-size: 80px;
+      top: 30px;
+      right: 30px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 70px;
+      height: 1px;
+      background: $main-green;
+      @media screen and (min-width: $screen-md) {
+        width: 80px;
+      }
+    }
+  }
+}
+
+// --- подзаголовки в секциях --- //
+.subtitle {
+  text-align: right;
+  margin: 0 20px;
+  @media screen and (min-width: $screen-md) {
+    margin-right: 80px;
+  }
+
+  &__head {
+    font-weight: $bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    @media screen and (min-width: $screen-sm) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: $screen-md) {
+      font-size: 40px;
+    }
+
+    &-img {
+      display: inline-block;
+      padding-left: 26px;
+    }
+
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+// --- кнопка --- //
+.btn {
+  font-weight: $bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: relative;
+  @media screen and (min-width: $screen-md) {
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  span {
+    display: inline-block;
+    padding: 12px 37px 12px 12px;
+    background: $main-green;
+    position: relative;
+    transition: $transition-elem;
+    @media screen and (min-width: $screen-md) {
+      padding: 17px 57px 17px 17px;
+    }
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background: $white;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -5px;
+    }
+
+    &:hover {
+      background: darken($main-green, 15%);
+    }
+    
+  }
+
+  &__slider-arrow {
+    fill: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+    @media screen and (min-width: $screen-md) {
+      right: 17px;
+    }
+  }
+  // кнопка в секции shop
+  &-footer{
+    span{
+      padding: 17px;
+    }
+  }
+}
+
+// --- сброс outline у слайдера --- //
+.slick-slide {
+  outline: none !important;
+}
+
+// --- меню гамбургер --- //
+.hamburger {
+  z-index: 100;
+  position: relative;
+  cursor: pointer;
+  max-width: 94px;
+  
+  span {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: $main-green;
+    box-shadow: 0px 0px 35px rgba($main-green, 0.95);
+    transition: $transition-elem;
+  }
+
+  span:nth-child(1) {
+    transform: translateY(-15px);
+  }
+
+  span:nth-child(1).active {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+
+  span:nth-child(2).active {
+    transform: rotate(45deg);
+    animation-delay: 1s;
+  }
+  span:nth-child(3).active {
+    transform: rotate(-45deg);
+    animation-delay: 1s;
+  }
+
+  span:nth-child(4) {
+    transform: translateY(15px);
+  }
+
+  span:nth-child(4).active {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  
+}
+
+
+//box-shadow: 0px 0px 35px rgba($main-green, 0.95);

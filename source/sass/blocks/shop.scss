@@ -1,0 +1,232 @@
+.shop {
+  position: relative;
+  background: url('/img/shop/shop-bg.png') no-repeat bottom right;
+}
+
+// --- слайдер --- //
+.shop-slider{
+  position: relative;
+
+  &.slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $screen-lg) {
+      flex-direction: row;
+    }
+  }
+
+  &__col-info{
+    width: 65%;
+    @media screen and (min-width: $screen-lg) {
+      width: 35%;
+    }
+  }
+
+  &__price{
+    font-weight: $bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__rating{
+    margin: 30px 0 10px 0;
+  }
+
+  &__col-params{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $screen-lg) {
+      width: 65%;
+      justify-content: space-around;
+    }
+  }
+
+  &__extras{
+    align-self: center;
+    transition: all .2s ease-in-out;
+    &.active {
+      opacity: 0.1;
+    }
+    @media screen and (min-width: $screen-lg) {
+      align-self: flex-end;
+    }
+    
+    &-title{
+      font-weight: $bold;
+      font-size: 28px;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      text-align: center;
+      @media screen and (min-width: $screen-lg) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__img {
+    margin: 0 15px;
+  }
+
+  &__btn {
+    margin-bottom: 20px;
+  }
+}
+
+.slider-extras{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    & + li {
+      margin-left: 20px;
+      @media screen and (min-width: $screen-lg) {
+        margin-left: 80px;
+      }
+    }
+
+    &-title{
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: $white-opacity;
+      margin: 10px 0;
+      text-align: center;
+      @media screen and (min-width: $screen-lg) {
+        margin: 36px 0 16px 0;
+      }
+    }
+
+    &-price{
+      font-weight: $bold;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+}
+
+.surfboard{
+  position: relative;
+  max-height: 100vh;
+
+  img {
+    height: 100%;
+  }
+
+  &__box{
+    position: absolute;   
+
+    &-1{
+      top: 215px;
+      right: 40px;
+    }
+    &-2{
+      top: 308px;
+      left: -6px;
+    }
+    &-3{
+      bottom: 71px;
+      left: 53px;
+    }
+    &-4{
+      top: 68px;
+      right: 25px;
+    }
+    &-5{
+      top: 308px;
+      right: 84px;
+    }
+    &-6{
+      bottom: 185px;
+      left: 32px;
+    }
+  }
+
+  &__circle{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: $white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:0 6px 12px 0 rgba(0,0,0,.2);
+
+    &-row{
+      position: absolute;
+      width: 12px;
+      height: 2px;
+      background: $main-green;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      & + .surfboard__circle-row {
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        background: $main-green;
+        top: 50%;
+        left: 50%;
+        transition: $transition-elem cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transform: translate(-50%, -50%) rotate(90deg);
+
+      }
+    }
+
+    &.active{
+      .surfboard__circle-row{
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      & + .surfboard__content {
+        display: block;
+      }
+    }
+  }
+
+  &__content{
+    display: none;
+    position: absolute;
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    width: 150px;
+    top: -14px;
+    left: 36px;
+    @media screen and (min-width: $screen-md) {
+      font-size: 24px;
+      padding-left: 100px;
+      line-height: 24px;
+      width: 355px;
+    }
+    
+    &::before{
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      background: $white-opacity;
+      left: 0;
+      top: 50%;
+      @media screen and (min-width: $screen-md) {
+        width: 80px;
+      }
+    }
+  }
+}

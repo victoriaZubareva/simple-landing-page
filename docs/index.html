@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#171919">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>surf</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header__title">go surf</div>
+    <div class="header__hamburger hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- header__aside -->
+    <div class="header__aside">
+      <div class="header__aside-logo logo">
+        <a href="#" class="logo__box">
+          <span>go</span>
+          <span class="logo__box-elem">surf</span>
+        </a>
+      </div>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__icon">
+              <svg>
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#nav-surf"></use>
+              </svg>
+              <span class="menu__item-title">Surf</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__icon">
+              <svg>
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#nav-travel"></use>
+              </svg>
+              <span class="menu__item-title">Surf</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__icon">
+              <svg>
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#nav-sleep"></use>
+              </svg>
+              <span class="menu__item-title">Surf</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__icon">
+              <svg>
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#nav-shop"></use>
+              </svg>
+              <span class="menu__item-title">Surf</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__icon menu__icon-search">
+              <svg>
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="header__date">
+          <div class="header__date-numb">20</div>
+          <div class="header__date-full">06 | 2018</div>
+        </div>
+        <div class="header__location">
+          <span class="location-header">California</span>
+        </div>
+      </nav>
+    </div>
+    <!-- header__map -->
+    <div class="header__map">
+      <svg width="1001" height="496" viewBox="0 0 1001 496" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.29827">
+          <path d="M1008.08 163.448L443.182 -356.858V-747.19L28.1096 -770C24.9043 -762.456 4.36709 -740.714 7.57176 -728.596C11.43 -714.102 30.8387 -718.735 36.4776 -709.409C43.0661 -698.42 31.7291 -653.749 28.3457 -640.86C21.8759 -616.445 7.09676 -596.665 2.82235 -572.25C-4.35982 -531.263 10.1824 -534.53 37.7242 -508.927C84.141 -465.742 46.9244 -420.952 58.6176 -370.223C68.1146 -328.878 109.605 -307.554 124.8 -266.211C136.553 -234.37 152.697 -226.233 177.746 -202.947C177.153 -217.084 164.51 -258.785 188.253 -255.102C211.817 -251.478 202.736 -216.669 207.247 -202.115C211.045 -189.997 237.933 -165.761 215.616 -154.593C208.196 -150.91 187.066 -165.582 178.577 -169.503C184.572 -150.791 180.774 -131.367 190.271 -113.487C201.608 -92.162 213.835 -100.359 228.853 -88.7754C244.344 -76.8355 242.683 -63.1137 235.797 -45.0554C228.615 -26.2247 221.196 -29.1352 232.592 -6.44342C240.843 9.95119 254.85 30.7421 266.9 43.2164C273.904 50.4634 281.502 52.1267 288.506 61.3932C294.323 69.1155 292.067 79.2142 299.012 86.1638C310.883 98.1037 331.006 98.282 340.384 113.904C350.831 131.309 338.96 144.437 369.706 142.833C371.309 177.643 377.897 209.185 377.541 243.994C394.695 250.825 422.414 242.687 440.399 239.063C458.266 263.18 481.355 246.429 501.774 259.558C510.678 265.26 508.837 279.517 514.239 284.506C525.339 294.723 533.529 288.308 547.301 291.872C557.51 294.486 565.404 301.97 575.138 304.703C584.338 307.257 599.475 301.258 606.301 309.396C614.492 319.138 600.78 336.958 613.127 344.799C623.395 351.333 638.115 335.77 648.088 338.027C659.721 340.7 693.079 371.174 701.271 381.212C710.59 392.677 719.969 414.062 725.25 428.793C733.501 451.841 732.373 463.127 749.408 479.998C760.27 490.75 749.942 491.522 767.63 494.67C779.204 496.749 794.518 488.374 806.212 487.067C830.549 484.394 855.122 489.027 879.102 484.453C901.421 480.176 922.729 473.166 945.64 469.899C965.465 467.048 1000.37 469.246 1017.94 459.801C1036.99 449.643 1038.71 426.654 1011.17 430.932C1008.97 416.26 1018.77 396.003 1007.85 385.847C1023.04 365.056 1028.56 350.384 1030.93 324.959C1032 313.792 1032.48 301.436 1038 292.05C1043.4 282.783 1058.59 277.259 1061.56 269.299C1066.13 256.943 1058.83 251.419 1053.25 244.528C1049.69 240.073 1039.54 242.212 1036.63 238.291C1031.23 231.103 1036.57 223.678 1033.6 216.431C1024.94 195.462 1014.61 187.205 1008.08 163.444C1008.26 167.424 1008.44 171.463 1008.2 175.384" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        <path class="map-line-east header__map-line" d="m729.32 90.825c-60.39 34.718-78.199 112.65 57.205 148.4 4.7444 4.5151 108.43-14.264 97.807 20.826-0.0328 0.1083-0.0667 0.2172-0.10172 0.3266-8.1797 16.21 9.9301 18.234 7.5689 54.196-2.9268 25.272 2.6373 25.264 4.1943 26.532 60.063 34.332 38.833 55.896 16.193 58.828-12.149 1.5732-50.204-34.483-61.374-38.152-73.148-24.027-36.277 16.832-118.44 9.3706-6.29-0.571-12.882-0.864-18.923 0.98-6.223 1.899-6.025 9.689-3.937 13.9 6.919 13.956 37.892 37.628 29.557 55.973-2.558 5.629-8.551 9.184-11.25 14.747-2.113 4.357-1.879 9.502-2.819 14.253" stroke="#fffffa" stroke-width="2"></path>
+        <path class="header__map-point header__map-point-5" d="m571.68 328.64c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5-6.5 2.91-6.5 6.5 2.91 6.5 6.5 6.5z" clip-rule="evenodd" fill="#4af6cd" fill-rule="evenodd"></path>
+        <path class="header__map-point header__map-point-2" d="m660.42 368.72c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z" clip-rule="evenodd" fill="#4af6cd" fill-rule="evenodd"></path>
+        <path class="header__map-point header__map-point-3" d="m725 471c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z" clip-rule="evenodd" fill="#4af6cd" fill-rule="evenodd"></path>
+        <path class="header__map-point header__map-point-1" d="m364.01 233.78c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z" clip-rule="evenodd" fill="#4af6cd" fill-rule="evenodd"></path>
+        <path class="header__map-point header__map-point-4" d="m732.97 91.825c3.59 0 6.5-2.9101 6.5-6.5s-2.91-6.5-6.5-6.5-6.5 2.9101-6.5 6.5 2.91 6.5 6.5 6.5z" clip-rule="evenodd" fill="#4af6cd" fill-rule="evenodd"></path>
+        <path d="m598.38 75.784c0.661 0 1.216 0.085 1.664 0.256 0.459 0.1707 0.923 0.448 1.392 0.832l-0.832 0.976c-0.672-0.544-1.381-0.816-2.128-0.816-0.917 0-1.659 0.352-2.224 1.056-0.555 0.704-0.832 1.8347-0.832 3.392 0 1.5147 0.277 2.6347 0.832 3.36 0.555 0.7147 1.291 1.072 2.208 1.072 0.469 0 0.88-0.08 1.232-0.24s0.725-0.384 1.12-0.672l0.752 0.96c-0.341 0.352-0.779 0.6453-1.312 0.88s-1.147 0.352-1.84 0.352c-0.896 0-1.696-0.2187-2.4-0.656-0.693-0.448-1.237-1.0987-1.632-1.952-0.384-0.864-0.576-1.8987-0.576-3.104s0.203-2.2347 0.608-3.088c0.405-0.864 0.955-1.5147 1.648-1.952s1.467-0.656 2.32-0.656zm11.023 11.216h-1.264l-0.112-1.312c-0.32 0.5227-0.688 0.9067-1.104 1.152-0.416 0.2347-0.922 0.352-1.52 0.352-0.736 0-1.312-0.224-1.728-0.672s-0.624-1.0827-0.624-1.904v-6.048h1.472v5.888c0 0.576 0.102 0.9867 0.304 1.232 0.203 0.2347 0.534 0.352 0.992 0.352 0.822 0 1.526-0.4853 2.112-1.456v-6.016h1.472zm6.705-8.624c0.299 0 0.576 0.032 0.832 0.096l-0.272 1.44c-0.256-0.064-0.501-0.096-0.736-0.096-0.523 0-0.944 0.192-1.264 0.576s-0.571 0.9813-0.752 1.792v4.816h-1.472v-8.432h1.264l0.144 1.712c0.224-0.6293 0.528-1.104 0.912-1.424s0.832-0.48 1.344-0.48zm6.172 0c0.298 0 0.576 0.032 0.832 0.096l-0.272 1.44c-0.256-0.064-0.502-0.096-0.736-0.096-0.523 0-0.944 0.192-1.264 0.576s-0.571 0.9813-0.752 1.792v4.816h-1.472v-8.432h1.264l0.144 1.712c0.224-0.6293 0.528-1.104 0.912-1.424s0.832-0.48 1.344-0.48zm8.391 4.16c0 0.2453-0.01 0.496-0.032 0.752h-5.376c0.064 0.928 0.299 1.6107 0.704 2.048 0.406 0.4373 0.928 0.656 1.568 0.656 0.406 0 0.779-0.059 1.12-0.176 0.342-0.1173 0.699-0.304 1.072-0.56l0.64 0.88c-0.896 0.704-1.877 1.056-2.944 1.056-1.173 0-2.09-0.384-2.752-1.152-0.65-0.768-0.976-1.824-0.976-3.168 0-0.8747 0.139-1.648 0.416-2.32 0.288-0.6827 0.694-1.216 1.216-1.6 0.534-0.384 1.158-0.576 1.872-0.576 1.12 0 1.979 0.368 2.576 1.104 0.598 0.736 0.896 1.7547 0.896 3.056zm-1.456-0.432c0-0.832-0.165-1.4667-0.496-1.904-0.33-0.4373-0.826-0.656-1.488-0.656-1.205 0-1.861 0.8853-1.968 2.656h3.952zm7.775-3.728c0.768 0 1.365 0.2293 1.792 0.688 0.437 0.4587 0.656 1.088 0.656 1.888v6.048h-1.472v-5.84c0-0.5973-0.112-1.0187-0.336-1.264s-0.555-0.368-0.992-0.368c-0.448 0-0.843 0.128-1.184 0.384s-0.661 0.624-0.96 1.104v5.984h-1.472v-8.432h1.264l0.128 1.248c0.299-0.448 0.667-0.8 1.104-1.056 0.448-0.256 0.939-0.384 1.472-0.384zm9.663 8.24c-0.555 0.384-1.184 0.576-1.888 0.576-0.715 0-1.275-0.2027-1.68-0.608-0.395-0.416-0.592-1.0133-0.592-1.792v-5.088h-1.472v-1.136h1.472v-1.904l1.472-0.176v2.08h2l-0.16 1.136h-1.84v5.024c0 0.4373 0.075 0.7573 0.224 0.96 0.16 0.192 0.421 0.288 0.784 0.288 0.331 0 0.704-0.112 1.12-0.336zm7.36-10.64v9.696h4.528l-0.176 1.328h-5.872v-11.024zm9.13 2.4c1.184 0 2.101 0.3947 2.752 1.184 0.661 0.7893 0.992 1.8613 0.992 3.216 0 0.8747-0.149 1.648-0.448 2.32-0.299 0.6613-0.731 1.1787-1.296 1.552-0.565 0.3627-1.237 0.544-2.016 0.544-1.184 0-2.107-0.3947-2.768-1.184s-0.992-1.8613-0.992-3.216c0-0.8747 0.149-1.6427 0.448-2.304 0.299-0.672 0.731-1.1893 1.296-1.552 0.565-0.3733 1.243-0.56 2.032-0.56zm0 1.184c-1.461 0-2.192 1.0773-2.192 3.232 0 2.144 0.725 3.216 2.176 3.216s2.176-1.0773 2.176-3.232c0-2.144-0.72-3.216-2.16-3.216zm9.248-1.184c0.501 0 0.96 0.075 1.376 0.224 0.416 0.1387 0.816 0.368 1.2 0.688l-0.704 0.928c-0.299-0.2133-0.592-0.368-0.88-0.464-0.277-0.1067-0.587-0.16-0.928-0.16-0.683 0-1.216 0.272-1.6 0.816-0.373 0.544-0.56 1.3493-0.56 2.416s0.187 1.856 0.56 2.368c0.373 0.5013 0.907 0.752 1.6 0.752 0.331 0 0.635-0.048 0.912-0.144 0.277-0.1067 0.587-0.272 0.928-0.496l0.672 0.96c-0.768 0.6187-1.627 0.928-2.576 0.928-1.141 0-2.043-0.384-2.704-1.152-0.651-0.768-0.976-1.8293-0.976-3.184 0-0.896 0.149-1.68 0.448-2.352s0.72-1.1947 1.264-1.568c0.555-0.3733 1.211-0.56 1.968-0.56zm10.092 6.656c0 0.3413 0.059 0.5973 0.176 0.768 0.118 0.16 0.294 0.2827 0.528 0.368l-0.336 1.024c-0.437-0.053-0.789-0.176-1.056-0.368-0.266-0.192-0.464-0.4907-0.592-0.896-0.565 0.8427-1.402 1.264-2.512 1.264-0.832 0-1.488-0.2347-1.968-0.704s-0.72-1.0827-0.72-1.84c0-0.896 0.32-1.584 0.96-2.064 0.651-0.48 1.568-0.72 2.752-0.72h1.296v-0.624c0-0.5973-0.144-1.024-0.432-1.28s-0.73-0.384-1.328-0.384c-0.618 0-1.376 0.1493-2.272 0.448l-0.368-1.072c1.046-0.384 2.016-0.576 2.912-0.576 0.992 0 1.734 0.2453 2.224 0.736 0.491 0.48 0.736 1.168 0.736 2.064zm-3.456 1.056c0.843 0 1.504-0.4373 1.984-1.312v-1.936h-1.104c-1.557 0-2.336 0.576-2.336 1.728 0 0.5013 0.123 0.88 0.368 1.136 0.246 0.256 0.608 0.384 1.088 0.384zm10.735 0.528c-0.554 0.384-1.184 0.576-1.888 0.576-0.714 0-1.274-0.2027-1.68-0.608-0.394-0.416-0.592-1.0133-0.592-1.792v-5.088h-1.472v-1.136h1.472v-1.904l1.472-0.176v2.08h2l-0.16 1.136h-1.84v5.024c0 0.4373 0.075 0.7573 0.224 0.96 0.16 0.192 0.422 0.288 0.784 0.288 0.331 0 0.704-0.112 1.12-0.336zm2.998-8.048v8.432h-1.472v-8.432zm-0.752-4.048c0.309 0 0.56 0.096 0.752 0.288s0.288 0.432 0.288 0.72-0.096 0.528-0.288 0.72c-0.192 0.1813-0.443 0.272-0.752 0.272-0.299 0-0.544-0.091-0.736-0.272-0.192-0.192-0.288-0.432-0.288-0.72s0.096-0.528 0.288-0.72 0.437-0.288 0.736-0.288zm6.963 3.856c1.184 0 2.102 0.3947 2.752 1.184 0.662 0.7893 0.992 1.8613 0.992 3.216 0 0.8747-0.149 1.648-0.448 2.32-0.298 0.6613-0.73 1.1787-1.296 1.552-0.565 0.3627-1.237 0.544-2.016 0.544-1.184 0-2.106-0.3947-2.768-1.184-0.661-0.7893-0.992-1.8613-0.992-3.216 0-0.8747 0.15-1.6427 0.448-2.304 0.299-0.672 0.731-1.1893 1.296-1.552 0.566-0.3733 1.243-0.56 2.032-0.56zm0 1.184c-1.461 0-2.192 1.0773-2.192 3.232 0 2.144 0.726 3.216 2.176 3.216 1.451 0 2.176-1.0773 2.176-3.232 0-2.144-0.72-3.216-2.16-3.216zm10.144-1.184c0.768 0 1.365 0.2293 1.792 0.688 0.437 0.4587 0.656 1.088 0.656 1.888v6.048h-1.472v-5.84c0-0.5973-0.112-1.0187-0.336-1.264s-0.555-0.368-0.992-0.368c-0.448 0-0.843 0.128-1.184 0.384s-0.661 0.624-0.96 1.104v5.984h-1.472v-8.432h1.264l0.128 1.248c0.299-0.448 0.667-0.8 1.104-1.056 0.448-0.256 0.939-0.384 1.472-0.384z" fill="#fffffa"></path>
+        <path class="map-line-west header__map-line" d="m729.5 91c-8.5379 16.69-98.577-3.1943-110.48 23.626-0.32688 0.7367 0.14431 0.1035 0.22101 0.1558-9.7329 32.173-62.944-4.2125-67.911-2.0845-10.786 6.98-56.349-10.644-53.756-1.4435 2.6794 9.5023 35.078 33.045 35.078 33.045 13.683 7.9848 14.405 25.439 6.8682 36.544-5.3628 7.9022-38.116 15.51-49.3 12.879-73.24-17.232-35.569-31.986-117.84-37.337-6.298-0.4095-12.898-0.6197-18.947 0.7029-6.2309 1.362-6.0326 6.949-3.942 9.9692 6.9277 10.01 37.94 26.987 29.594 40.145-2.5612 4.0372-8.5618 6.5869-11.264 10.577-2.1157 3.1249-1.8814 6.8149-2.8226 10.222" fill="none" stroke="#fffffa" stroke-width="1.6948"></path>
+        <path class="map-line-south header__map-line" d="m729.5 91c-8.568 23.382 96.669 69.003 112.73 84.284 4.759 4.529 5.213 12.01 0.204 16.535-10.772 9.732-51.615-4.425-49.025 8.403 2.676 13.249 37.207 31.786 38.764 33.054 13.666 11.133 18.117 39.375 10.59 54.859-5.356 11.018-34.428 21.83-45.598 18.161-51.803-0.2724-14.318-9.6173-99.74-20.7-6.29-0.571-30.71-4.9909-36.751-3.1468-6.223 1.8989-20.716 6.3875-18.628 10.598-2.8203 11.384 41.359 22.606 33.024 40.951-2.558 5.629-8.551 9.184-11.25 14.747-2.113 4.357-1.879 9.502-2.819 14.253" stroke="#fffffa" stroke-width="2"></path>
+        <path class="map-line-north header__map-line header__map-line-active" d="m729.5 91c-8.568 23.382-22.058 49.504-5.9972 64.785 4.759 4.529 5.213 12.01 0.204 16.535-10.772 9.732-51.615-4.425-49.025 8.403 2.676 13.249 37.207 31.786 38.764 33.054 13.666 11.133 18.117 39.375 10.59 54.859-5.356 11.018-23.038-10.524-34.208-14.193-73.148-24.027-30.943-17.86-113.11-25.322-6.29-0.571-31.37-6.8066-37.411-4.9626-6.223 1.899 3.8794 31.478 5.9674 35.69 6.919 13.956 66.284-0.01 57.949 18.336-2.558 5.629-37.604 11.825-40.303 17.388-2.113 4.357 9.3459 15.445 8.4059 20.196" stroke="#fffffa" stroke-width="2"></path>
+        <text x="369.4567" y="336.96753" fill="#fffffa" font-family="Ebrima" font-size="16px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="369.4567" y="336.96753">North Shore | Malibu, CA</tspan>
+        </text>
+        <text x="272.14938" y="269.89865" fill="#fffffa" font-family="Ebrima" font-size="16px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="272.14938" y="269.89865">West Shore</tspan>
+        </text>
+        <text x="560.82623" y="400.26587" fill="#fffffa" font-family="Ebrima" font-size="16px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="560.82623" y="400.26587">South Shore</tspan>
+        </text>
+        <text x="749.62549" y="467.75494" fill="#fffffa" font-family="Ebrima" font-size="16px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve">
+          <tspan x="749.62549" y="467.75494">East Shore</tspan>
+        </text>
+      </svg>
+    </div>
+    <!-- header__slider -->
+    <div class="header__slider">
+      <!-- slider-item 1 -->
+      <div class="header__slider-item slider-item">
+        <div class="slider-item__info">
+          <div class="slider-item__info-subtitle headline-left">Surf</div>
+          <h1 class="slider-item__info-title">North Shore</h1>
+          <div class="slider-item__info-subtext headline-left">Condition</div>
+          <div class="slider-item__info-text">Radical</div>
+          <a href="#" class="slider-item__info-link next-slider">
+            <svg class="slider-item__arrow-right slider-arrow">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- slider-item 2 -->
+      <div class="header__slider-item slider-item">
+        <div class="slider-item__info">
+          <div class="slider-item__info-subtitle headline-left">Surf</div>
+          <h1 class="slider-item__info-title">South Shore</h1>
+          <div class="slider-item__info-subtext headline-left">Condition</div>
+          <div class="slider-item__info-text">Radical</div>
+          <a href="#" class="slider-item__info-link next-slider">
+            <svg class="slider-item__arrow-right slider-arrow">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- slider-item 3 -->
+      <div class="header__slider-item slider-item">
+        <div class="slider-item__info">
+          <div class="slider-item__info-subtitle headline-left">Surf</div>
+          <h1 class="slider-item__info-title">West Shore</h1>
+          <div class="slider-item__info-subtext headline-left">Condition</div>
+          <div class="slider-item__info-text">Radical</div>
+          <a href="#" class="slider-item__info-link next-slider">
+            <svg class="slider-item__arrow-right slider-arrow">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- slider-item 4 -->
+      <div class="header__slider-item slider-item">
+        <div class="slider-item__info">
+          <div class="slider-item__info-subtitle headline-left">Surf</div>
+          <h1 class="slider-item__info-title">East Shore</h1>
+          <div class="slider-item__info-subtext headline-left">Condition</div>
+          <div class="slider-item__info-text">Radical</div>
+          <a href="#" class="slider-item__info-link next-slider">
+            <svg class="slider-item__arrow-right slider-arrow">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- slider-dots -->
+    <div class="slider-dots">
+      <div class="slider-dots__item dots-north">
+        <div class="dots-box">
+          <div class="dots-box__number">01</div>
+          <div class="dots-box__name">North Shore</div>
+        </div>
+      </div>
+      <div class="slider-dots__item dots-south">
+        <div class="dots-box">
+          <div class="dots-box__number">02</div>
+          <div class="dots-box__name">South Shore</div>
+        </div>
+      </div>
+      <div class="slider-dots__item dots-west">
+        <div class="dots-box">
+          <div class="dots-box__number">03</div>
+          <div class="dots-box__name">West Shore</div>
+        </div>
+      </div>
+      <div class="slider-dots__item dots-east">
+        <div class="dots-box">
+          <div class="dots-box__number">04</div>
+          <div class="dots-box__name">East Shore</div>
+        </div>
+      </div>
+    </div>
+    <!-- arrows top right -->
+    <div class="header__arrows arrows">
+      <a href="#" class="arrows__prev prev-slider">
+        <svg class="slider-arrow slider-arrow-left">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+      <a href="#" class="arrows__next next-slider">
+        <svg class="slider-arrow">
+          <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="header__arrow-bottom">
+      <svg>
+        <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrows-down"></use>
+      </svg>
+    </div>
+  </header>
+  <!-- container -->
+  <div class="container">
+    <!-- section surf -->
+    <section class="surf">
+      <div class="title">
+        <span>
+          surf 
+          <h3>surf</h3>        
+        </span> 
+      </div>
+      <!-- surf__subtitle -->
+      <div class="surf__subtitle subtitle">
+        <div class="headline-left">Current location</div>
+        <div class="subtitle__head">California <span>|</span> USA</div>
+      </div>
+      <!-- surf__map -->
+      <div class="surf__map surf-map">
+        <div class="surf-map__point surf-map-point surf-map-point-1">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.7s"></div>
+          <div class="surf-map-point__content wow fadeIn" data-wow-delay="1.8s">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-2">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.6s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-3">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.5s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-4">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.4s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-5">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.3s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-6">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.2s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-7">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0.1s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="surf-map__point surf-map-point surf-map-point-8">
+          <div class="surf-map-point__circle wow fadeInUpBig" data-wow-delay="0s"></div>
+          <div class="surf-map-point__content">
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-head">
+                <div class="surf-map-point__content-title">Airlie Beach</div>
+                <div class="surf-map-point__content-subtitle">Australia</div>
+              </div>
+              <a class="surf-map-point__content-link">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="surf-map-point__content-row">
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#surf-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">9 - 13</div>
+                <div class="surf-map-point__content-name">Surf (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#tide-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">+2.3</div>
+                <div class="surf-map-point__content-name">Tide (FT)</div>
+              </div>
+              <div class="surf-map-point__content-item">
+                <svg>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#wind-icon-map"></use>
+                </svg>
+                <div class="surf-map-point__content-number">4 SE</div>
+                <div class="surf-map-point__content-name">Wind (KTS)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- surf__slider -->
+      <div class="surf__slider">
+        <!-- arrows top right -->
+        <div class="arrows">
+          <a href="#" class="arrows__prev prev-surf">
+            <svg class="slider-arrow slider-arrow-left">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+          <a href="#" class="arrows__next next-surf">
+            <svg class="slider-arrow">
+              <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- surf__slider -->
+        <div class="surf-slider">
+          <!-- surf__slider-1 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider2.jpg)" surf="1">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Malibu Beach</div>
+              <div class="surf-slider__inner-location">California <span>|</span> USA</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-2 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider4.jpg)" surf="2">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Airlie Beach</div>
+              <div class="surf-slider__inner-location">Queensland <span>|</span> Australia</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-3 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider1.jpg)" surf="3">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Cloud Nine</div>
+              <div class="surf-slider__inner-location">Siargao <span>|</span> Philippines</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-4 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider2.jpg)" surf="4">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Vieux Boucau</div>
+              <div class="surf-slider__inner-location">Hossegor <span>|</span> France</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-5 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider1.jpg)" surf="5">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Malibu Beach</div>
+              <div class="surf-slider__inner-location">California <span>|</span> USA</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-6 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider2.jpg)" surf="6">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Airlie Beach</div>
+              <div class="surf-slider__inner-location">Queensland <span>|</span> Australia</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-7 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider3.jpg)" surf="7">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Cloud Nine</div>
+              <div class="surf-slider__inner-location">Siargao <span>|</span> Philippines</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- surf__slider-8 -->
+          <div class="surf__slider-box" style="background-image: url(img/surf/surf-slider4.jpg)" surf="8">
+            <div class="surf-slider__inner">
+              <div class="surf-slider__inner-title">Vieux Boucau</div>
+              <div class="surf-slider__inner-location">Hossegor <span>|</span> France</div>
+              <div class="surf-slider__btn-box">
+                <a href="#" class="btn">
+                  View <span>Surf</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section travel -->
+    <section class="travel">
+      <div class="title">
+        <span>
+          Travel
+          <h3>Travel</h3>
+        </span>
+      </div>
+      <div class="travel__bg-glass"></div>
+      <!-- travel-slider(repeat) -->
+      <div class="repeat-slider">
+        <!-- travel-slider__item 1 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/travel/travel-australia.jpg" alt="travel-australia">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-repeat-slider">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-repeat-slider">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Airline</div>
+              <div class="subtitle__head repeat-slider__descr-head">Virgin Australia
+                <img class="subtitle__head-img" src="img/travel/travel-avia.svg" alt="">
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/travel/virgin-avia.png" alt="">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Destination</div>
+                <div class="repeat-slider__info-title">Queensland Australia</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Distance</div>
+                <div class="repeat-slider__info-title">7,065 Miles</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Travel Time</div>
+                <div class="repeat-slider__info-title">23 Hours 5 Minutes</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">$1,976 USD
+                  <span class="repeat-slider__info-span">Round Trip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Flight</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- travel-slider__item 2 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/travel/travel-cal.jpg" alt="travel-africa">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Supertubes <span>|</span> South Africa</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-repeat-slider">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-repeat-slider">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Airline</div>
+              <div class="subtitle__head repeat-slider__descr-head">Virgin South Africa
+                <img class="subtitle__head-img" src="img/travel/travel-avia.svg" alt="">
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/travel/virgin-avia.png" alt="airline">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Destination</div>
+                <div class="repeat-slider__info-title">Queensland South Africa</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Distance</div>
+                <div class="repeat-slider__info-title">7,065 Miles</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Travel Time</div>
+                <div class="repeat-slider__info-title">23 Hours 5 Minutes</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">$2,576 USD
+                  <span class="repeat-slider__info-span">Round Trip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Flight</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- travel-slider__item 3 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/travel/travel-malibu.jpg" alt="travel-indonesia">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Uluwatu and Kuta <span>|</span> Indonesia</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-repeat-slider">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-repeat-slider">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Airline</div>
+              <div class="subtitle__head repeat-slider__descr-head">Virgin Indonesia
+                <img class="subtitle__head-img" src="img/travel/travel-avia.svg" alt="">
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/travel/virgin-avia.png" alt="indonesia">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Destination</div>
+                <div class="repeat-slider__info-title">Queensland Indonesia</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Distance</div>
+                <div class="repeat-slider__info-title">5,065 Miles</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Travel Time</div>
+                <div class="repeat-slider__info-title">23 Hours 5 Minutes</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">$1,476 USD
+                  <span class="repeat-slider__info-span">Round Trip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Flight</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- travel-slider__item 4 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/travel/travel-airlie.jpg" alt="travel-california">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Maverick's <span>|</span> California</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-repeat-slider">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-repeat-slider">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Airline</div>
+              <div class="subtitle__head repeat-slider__descr-head">Virgin California
+                <img class="subtitle__head-img" src="img/travel/travel-avia.svg" alt="">
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/travel/virgin-avia.png" alt="california">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Destination</div>
+                <div class="repeat-slider__info-title">Queensland California</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Distance</div>
+                <div class="repeat-slider__info-title">3,065 Miles</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Travel Time</div>
+                <div class="repeat-slider__info-title">23 Hours 5 Minutes</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">$3,976 USD
+                  <span class="repeat-slider__info-span">Round Trip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Flight</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section sleep -->
+    <section class="sleep">
+      <div class="title">
+        <span>
+          Sleep
+          <h3>Sleep</h3>
+        </span>
+      </div>
+      <div class="sleep__bg-glass"></div>
+      <!-- sleep-slider(repeat) -->
+      <div class="sleep-slider">
+        <!-- sleep-slider__item 1 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/sleep/sleep-australia.jpg" alt="sleep-australia">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Airlie Beach <span>|</span> Australia</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-sleep">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-sleep">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Rating</div>
+              <div class="subtitle__head repeat-slider__descr-head">Excellent
+                <ul class="sleep__rating rating-star">
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/sleep/hammock.png" alt="hammock">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Resort</div>
+                <div class="repeat-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Nights</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="9" step="1" value="5" class="quantity-nights">
+                    <span>Nights</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Guests</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="5" step="1" value="4" class="quantity-guests">
+                    <span>Guests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">
+                  <span class="quantity-sum" data-nights="55" data-guests="25"></span>
+                  <span class="repeat-slider__info-span">Per Night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Stay</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- sleep-slider__item 2 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/sleep/sleep-africa.jpg" alt="sleep-africa">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Supertubes <span>|</span> South Africa</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-sleep">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-sleep">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Rating</div>
+              <div class="subtitle__head repeat-slider__descr-head">Excellent
+                <ul class="sleep__rating rating-star">
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/sleep/hammock.png" alt="airline">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Resort</div>
+                <div class="repeat-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Nights</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="9" step="1" value="5" class="quantity-nights">
+                    <span>Nights</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Guests</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="5" step="1" value="4" class="quantity-guests">
+                    <span>Guests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">
+                  <span class="quantity-sum" data-nights="55" data-guests="25"></span>
+                  <span class="repeat-slider__info-span">Per Night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Stay</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- sleep-slider__item 3 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/sleep/sleep-indonesia.jpg" alt="sleep-indonesia">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Uluwatu and Kuta <span>|</span> Indonesia</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-sleep">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-sleep">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Rating</div>
+              <div class="subtitle__head repeat-slider__descr-head">Excellent
+                <ul class="sleep__rating rating-star">
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/sleep/hammock.png" alt="indonesia">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Resort</div>
+                <div class="repeat-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Nights</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="9" step="1" value="5" class="quantity-nights">
+                    <span>Nights</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Guests</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="5" step="1" value="4" class="quantity-guests">
+                    <span>Guests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">
+                  <span class="quantity-sum" data-nights="55" data-guests="25"></span>
+                  <span class="repeat-slider__info-span">Per Night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Stay</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- sleep-slider__item 4 -->
+        <div class="repeat-slider__item">
+          <div class="repeat-slider__head">
+            <div class="repeat-slider__img">
+              <img src="./img/sleep/sleep-california.jpg" alt="sleep-california">
+            </div>
+            <div class="repeat-slider__subtitle subtitle">
+              <div class="headline-left">Shore</div>
+              <div class="subtitle__head">Maverick's <span>|</span> California</div>
+              <div class="repeat-slider__arrows arrows">
+                <a href="#" class="arrows__prev prev-sleep">
+                  <svg class="slider-arrow slider-arrow-left">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+                <a href="#" class="arrows__next next-sleep">
+                  <svg class="slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-inner">
+            <div class="repeat-slider__descr">
+              <div class="headline-left headline-left__right">Rating</div>
+              <div class="subtitle__head repeat-slider__descr-head">Excellent
+                <ul class="sleep__rating rating-star">
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="repeat-slider__descr-img">
+                <img src="./img/sleep/hammock.png" alt="california">
+              </div>
+            </div>
+            <div class="repeat-slider__info">
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Resort</div>
+                <div class="repeat-slider__info-title">Auberge Australia</div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Nights</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="9" step="1" value="5" class="quantity-nights">
+                    <span>Nights</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle"># of Guests</div>
+                <div class="repeat-slider__info-title">
+                  <div class="quantity">
+                    <input readonly="" type="number" min="1" max="5" step="1" value="4" class="quantity-guests">
+                    <span>Guests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="repeat-slider__info-item">
+                <div class="repeat-slider__info-subtitle">Pricing</div>
+                <div class="repeat-slider__info-title">
+                  <span class="quantity-sum" data-nights="55" data-guests="25"></span>
+                  <span class="repeat-slider__info-span">Per Night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repeat-slider__btn">
+            <a href="#" class="btn">
+              Book <span>Stay</span>
+              <svg class="slider-arrow btn__slider-arrow">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section shop -->
+    <section class="shop">
+      <div class="title">
+        <span>
+          shop
+          <h3>shop</h3>
+        </span>
+      </div>
+      <div class="container-inner">
+        <!-- shop-slider -->
+        <div class="shop-slider">
+          <!-- shop-slider__item 1 -->
+          <div class="shop-slider__item">
+            <!-- arrows top right -->
+            <div class="arrows">
+              <a href="#" class="arrows__prev prev-shop">
+                <svg class="slider-arrow slider-arrow-left">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+              <a href="#" class="arrows__next next-shop">
+                <svg class="slider-arrow">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- col-info -->
+            <div class="shop-slider__col-info">
+              <div class="headline-left headline-left__right">Style</div>
+              <div class="subtitle__head repeat-slider__descr-head">North Nugget TT Surfboard</div>
+              <div class="shop-slider__rating">
+                <ul class="sleep__rating rating-star">
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="shop-slider__price">
+                $799 <sup>99</sup>
+              </div>
+              <div class="shop-slider__btn">
+                <a href="#" class="btn">
+                  Drop <span>In</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- col-params -->
+            <div class="shop-slider__col-params">
+              <div class="shop-slider__img surfboard">
+                <img src="./img/shop/surfboard.png" alt="">
+                <div class="surfboard__box surfboard__box-1">
+                  <div class="surfboard__circle">
+                    <div class="surfboard__circle-row"></div>
+                    <div class="surfboard__circle-row"></div>
+                  </div>
+                  <div class="surfboard__content">
+                    Double Concave with
+                    Vee Shape low point
+                  </div>
+                </div>
+                <div class="surfboard__box surfboard__box-2">
+                  <div class="surfboard__circle">
+                    <div class="surfboard__circle-row"></div>
+                    <div class="surfboard__circle-row"></div>
+                  </div>
+                  <div class="surfboard__content">
+                    Double Concave with
+                    Vee Shape low point
+                  </div>
+                </div>
+                <div class="surfboard__box surfboard__box-3">
+                  <div class="surfboard__circle">
+                    <div class="surfboard__circle-row"></div>
+                    <div class="surfboard__circle-row"></div>
+                  </div>
+                  <div class="surfboard__content">
+                    Double Concave with
+                    Vee Shape low point
+                  </div>
+                </div>
+              </div>
+              <!-- extras -->
+              <div class="shop-slider__extras">
+                <div class="shop-slider__extras-title">Extras</div>
+                <ul class="slider-extras">
+                  <li class="slider-extras__item">
+                    <img src="./img/shop/Wax.png" alt="wax-extras">
+                    <div class="slider-extras__item-title">Sex Wax</div>
+                    <div class="slider-extras__item-price">$24.99</div>
+                  </li>
+                  <li class="slider-extras__item">
+                    <img src="./img/shop/Bracelet.png" alt="bracelet-extras">
+                    <div class="slider-extras__item-title">Pura Vida</div>
+                    <div class="slider-extras__item-price">$27.99</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- shop-slider__item 2 -->
+          <div class="shop-slider__item">
+            <!-- arrows top right -->
+            <div class="arrows">
+              <a href="#" class="arrows__prev prev-shop">
+                <svg class="slider-arrow slider-arrow-left">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+              <a href="#" class="arrows__next next-shop">
+                <svg class="slider-arrow">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- col-info -->
+            <div class="shop-slider__col-info">
+              <div class="headline-left headline-left__right">Style</div>
+              <div class="subtitle__head repeat-slider__descr-head">North Nugget TT Surfboard</div>
+              <div class="shop-slider__rating">
+                <ul class="sleep__rating rating-star">
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                  <li class="rating-star__item">
+                    <img src="./img/sleep/star-sleep.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="shop-slider__price">
+                $432 <sup>99</sup>
+              </div>
+              <div class="shop-slider__btn">
+                <a href="#" class="btn">
+                  Drop <span>In</span>
+                  <svg class="slider-arrow btn__slider-arrow">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- col-params -->
+            <div class="shop-slider__col-params">
+              <div class="shop-slider__img surfboard">
+                <img src="./img/shop/surfboard.png" alt="">
+                <div class="surfboard__box surfboard__box-4">
+                  <div class="surfboard__circle">
+                    <div class="surfboard__circle-row"></div>
+                    <div class="surfboard__circle-row"></div>
+                  </div>
+                  <div class="surfboard__content">
+                    Double Concave with
+                    Vee Shape low point
+                  </div>
+                </div>
+                <div class="surfboard__box surfboard__box-5">
+                  <div class="surfboard__circle">
+                    <div class="surfboard__circle-row"></div>
+                    <div class="surfboard__circle-row"></div>
+                  </div>
+                  <div class="surfboard__content">
+                    Double Concave with
+                    Vee Shape low point
+                  </div>
+                </div>
+                <div class="surfboard__box surfboard__box-6">
+                  <div class="surfboard__circle">
+                    <div class="surfboard__circle-row"></div>
+                    <div class="surfboard__circle-row"></div>
+                  </div>
+                  <div class="surfboard__content">
+                    Double Concave with
+                    Vee Shape low point
+                  </div>
+                </div>
+              </div>
+              <!-- extras -->
+              <div class="shop-slider__extras">
+                <div class="shop-slider__extras-title">Extras</div>
+                <ul class="slider-extras">
+                  <li class="slider-extras__item">
+                    <img src="./img/shop/Bracelet.png" alt="wax-extras">
+                    <div class="slider-extras__item-title">Pura Vida</div>
+                    <div class="slider-extras__item-price">$38.99</div>
+                  </li>
+                  <li class="slider-extras__item">
+                    <img src="./img/shop/Wax.png" alt="bracelet-extras">
+                    <div class="slider-extras__item-title">Sex Wax</div>
+                    <div class="slider-extras__item-price">$15.99</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer__btn">
+      <a href="#" class="btn btn-footer">
+        Go <span>surf</span>
+      </a>
+    </div>
+    <div class="footer__copyright">
+      © Go-Surf 2018. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

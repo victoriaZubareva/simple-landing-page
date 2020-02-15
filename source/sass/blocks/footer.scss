@@ -1,0 +1,18 @@
+.footer {
+
+  &__btn{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__copyright{
+    font-weight: $light;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $white-opacity;
+    text-align: center;
+    letter-spacing: 1.05px;
+    margin-bottom: 35px;
+  }
+}
